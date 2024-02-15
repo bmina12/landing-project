@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud Education</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets_front/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="nav-sec">
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                  <div class="logo-wrap">
+                    <img
+                      src="assets_front/images/Logo.png"
+                      alt="Cloud Education"
+                    />
+                  </div>
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Discover</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Community</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        services
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Master of Technology</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Master of Business Administration</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Bachelor of Arts</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        more
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Master of Technology</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Master of Business Administration</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Bachelor of Arts</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="d-block d-lg-none">
+                      <div class="head-btns">
+                        <div class="sign-in">
+                          <a href="#">sign in</a>
+                        </div>
+                        <div class="dl-app">
+                          <a href="#"
+                            ><iconify-icon icon="ci:add-plus"></iconify-icon
+                            >Download app</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block">
+            <div class="head-btns">
+              <div class="sign-in">
+                <a href="#">sign in</a>
+              </div>
+              <div class="dl-app">
+                <a href="#"
+                  ><iconify-icon icon="ci:add-plus"></iconify-icon>Download
+                  app</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="college-banner">
+      <div class="img-wrap">
+        <img
+          src="assets_front/images/slider-img.jpg"
+          alt="College banner image"
+        />
+      </div>
+      <div class="caption">
+        <h1>Discover college & university for your abroad education</h1>
+        <small
+          >Everything you need for your abroad education is here. Discover
+          global opportunities with us.</small
+        >
+      </div>
+    </section>
+    <section class="search-bar">
+      <div class="container">
+        <div class="search-wrap">
+          <form class="row">
+            <div class="col-lg-12">
+              <div class="search-field">
+                <div class="input-group">
+                  <div class="form-outline" data-mdb-input-init>
+                    <input
+                      type="search"
+                      placeholder="Search universities, courses"
+                      id="form1"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="form1"
+                      ><iconify-icon icon="mingcute:search-line"></iconify-icon
+                    ></label>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-primary d-none d-md-block"
+                    data-mdb-ripple-init
+                  >
+                    search
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="for-select d-block d-md-none">
+                <button onclick="optionFunction();">
+                  <iconify-icon icon="bi:filter"></iconify-icon>Apply filter
+                </button>
+              </div>
+              <div class="select-toggle d-none d-md-block" id="collapse-select">
+                <div class="row">
+                  <div class="col-lg-2 col-md-6">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Countries</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-2 col-md-6">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>courses</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-2 col-md-6">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>degree</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-2 col-md-6">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>duration</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-2 col-md-6">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>fees</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-2 col-md-6">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>intake</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="filter-sec">
+      <div class="container">
+        <div class="f-wrap">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="filter-head">
+                <small>Showing results for</small>
+                <h3>All Colleges and Universities</h3>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 d-none d-md-block">
+              <div class="filter-wrap">
+                <strong>sort by:</strong>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Fee(low - high)</option>
+                  <option value="1">Latest</option>
+                  <option value="2">Long duration</option>
+                  <option value="3">Short duration</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="university-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="univ-card">
+              <div class="univ-head">
+                <div class="univ-logo">
+                  <div class="img-wrap">
+                    <img
+                      src="assets_front/images/melbourn-inst.png"
+                      alt="melbourn institute logo"
+                    />
+                  </div>
+                </div>
+                <div class="univ-name">
+                  <h4><a href="#">Melbourne Institute of Technology</a></h4>
+                  <small>Sydney, Australia</small>
+                </div>
+                <div class="heart-icon">
+                  <a href="#"
+                    ><iconify-icon icon="mdi:favourite-border"></iconify-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="univ-course">
+                <div class="course-title">
+                  <small>Course name</small>
+                  <h5>
+                    <a href="#"
+                      >Master of Technology (Enterprise Systems and Business
+                      Analytics)</a
+                    >
+                  </h5>
+                </div>
+                <div class="course-time">
+                  <div class="c-fee">
+                    <small>Fee per year</small>
+                    <strong>AUD 20,000</strong>
+                  </div>
+                  <div class="c-fee c-dur">
+                    <small>duration</small>
+                    <strong>2 year</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="univ-card">
+              <div class="univ-head">
+                <div class="univ-logo">
+                  <div class="img-wrap">
+                    <img
+                      src="assets_front/images/central-queensland.png"
+                      alt="melbourn institute logo"
+                    />
+                  </div>
+                </div>
+                <div class="univ-name">
+                  <h4><a href="#">Central Queensland University</a></h4>
+                  <small>New South Wales, Australia</small>
+                </div>
+                <div class="heart-icon">
+                  <a href="#"
+                    ><iconify-icon icon="mdi:favourite-border"></iconify-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="univ-course">
+                <div class="course-title">
+                  <small>Course name</small>
+                  <h5>
+                    <a href="#"
+                      >Master of Business Administration (Coursework)</a
+                    >
+                  </h5>
+                </div>
+                <div class="course-time">
+                  <div class="c-fee">
+                    <small>Fee per year</small>
+                    <strong>AUD 39,500</strong>
+                  </div>
+                  <div class="c-fee c-dur">
+                    <small>duration</small>
+                    <strong>2 year</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="univ-card">
+              <div class="univ-head">
+                <div class="univ-logo">
+                  <div class="img-wrap">
+                    <img
+                      src="assets_front/images/swinburne-university.png"
+                      alt="swinburne university logo"
+                    />
+                  </div>
+                </div>
+                <div class="univ-name">
+                  <h4><a href="#">Swinburne University of Technology</a></h4>
+                  <small>Vancouver, Canada</small>
+                </div>
+                <div class="heart-icon">
+                  <a href="#"
+                    ><iconify-icon icon="mdi:favourite-border"></iconify-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="univ-course">
+                <div class="course-title">
+                  <small>Course name</small>
+                  <h5>
+                    <a href="#"
+                      >Graduate Diploma in Early Childhood Education
+                      (Extension)</a
+                    >
+                  </h5>
+                </div>
+                <div class="course-time">
+                  <div class="c-fee">
+                    <small>Fee per year</small>
+                    <strong>CAD 38,614</strong>
+                  </div>
+                  <div class="c-fee c-dur">
+                    <small>duration</small>
+                    <strong>1 year</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="univ-card">
+              <div class="univ-head">
+                <div class="univ-logo">
+                  <div class="img-wrap">
+                    <img
+                      src="assets_front/images/central-queensland.png"
+                      alt="central Queensland university logo"
+                    />
+                  </div>
+                </div>
+                <div class="univ-name">
+                  <h4><a href="#">Central Queensland University</a></h4>
+                  <small>New South Wales, Australia</small>
+                </div>
+                <div class="heart-icon">
+                  <a href="#"
+                    ><iconify-icon icon="mdi:favourite-border"></iconify-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="univ-course">
+                <div class="course-title">
+                  <small>Course name</small>
+                  <h5>
+                    <a href="#"
+                      >Master in Information and Communication Technology</a
+                    >
+                  </h5>
+                </div>
+                <div class="course-time">
+                  <div class="c-fee">
+                    <small>Fee per year</small>
+                    <strong>AUD 39,500</strong>
+                  </div>
+                  <div class="c-fee c-dur">
+                    <small>duration</small>
+                    <strong>2 year</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="univ-card">
+              <div class="univ-head">
+                <div class="univ-logo">
+                  <div class="img-wrap">
+                    <img
+                      src="assets_front/images/griffith-university.png"
+                      alt="griffith university logo"
+                    />
+                  </div>
+                </div>
+                <div class="univ-name">
+                  <h4><a href="#">Griffith University</a></h4>
+                  <small>Nova Scotia, Canada</small>
+                </div>
+                <div class="heart-icon">
+                  <a href="#"
+                    ><iconify-icon icon="mdi:favourite-border"></iconify-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="univ-course">
+                <div class="course-title">
+                  <small>Course name</small>
+                  <h5>
+                    <a href="#"
+                      >Master of Business Administration (Coursework)</a
+                    >
+                  </h5>
+                </div>
+                <div class="course-time">
+                  <div class="c-fee">
+                    <small>Fee per year</small>
+                    <strong>CAD 39,500</strong>
+                  </div>
+                  <div class="c-fee c-dur">
+                    <small>duration</small>
+                    <strong>4 year</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="univ-card">
+              <div class="univ-head">
+                <div class="univ-logo">
+                  <div class="img-wrap">
+                    <img
+                      src="assets_front/images/griffith-university.png"
+                      alt="griffith university logo"
+                    />
+                  </div>
+                </div>
+                <div class="univ-name">
+                  <h4><a href="#">Griffith University</a></h4>
+                  <small>Nova Scotia, Canada</small>
+                </div>
+                <div class="heart-icon">
+                  <a href="#"
+                    ><iconify-icon icon="mdi:favourite-border"></iconify-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="univ-course">
+                <div class="course-title">
+                  <small>Course name</small>
+                  <h5><a href="#">Bachelor of Arts in Anthropology</a></h5>
+                </div>
+                <div class="course-time">
+                  <div class="c-fee">
+                    <small>Fee per year</small>
+                    <strong>CAD 39,500</strong>
+                  </div>
+                  <div class="c-fee c-dur">
+                    <small>duration</small>
+                    <strong>1 year</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="univ-card">
+              <div class="univ-head">
+                <div class="univ-logo">
+                  <div class="img-wrap">
+                    <img
+                      src="assets_front/images/melbourn-inst.png"
+                      alt="melbourn institute logo"
+                    />
+                  </div>
+                </div>
+                <div class="univ-name">
+                  <h4><a href="#">Melbourne Institute of Technology</a></h4>
+                  <small>Sydney, Australia</small>
+                </div>
+                <div class="heart-icon">
+                  <a href="#"
+                    ><iconify-icon icon="mdi:favourite-border"></iconify-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="univ-course">
+                <div class="course-title">
+                  <small>Course name</small>
+                  <h5>
+                    <a href="#"
+                      >Master of Technology (Enterprise Systems and Business
+                      Analytics)</a
+                    >
+                  </h5>
+                </div>
+                <div class="course-time">
+                  <div class="c-fee">
+                    <small>Fee per year</small>
+                    <strong>AUD 20,000</strong>
+                  </div>
+                  <div class="c-fee c-dur">
+                    <small>duration</small>
+                    <strong>2 year</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="univ-card">
+              <div class="univ-head">
+                <div class="univ-logo">
+                  <div class="img-wrap">
+                    <img
+                      src="assets_front/images/central-queensland.png"
+                      alt="central Queensland university logo"
+                    />
+                  </div>
+                </div>
+                <div class="univ-name">
+                  <h4><a href="#">Melbourne Institute of Technology</a></h4>
+                  <small>Washington, USA</small>
+                </div>
+                <div class="heart-icon">
+                  <a href="#"
+                    ><iconify-icon icon="mdi:favourite-border"></iconify-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="univ-course">
+                <div class="course-title">
+                  <small>Course name</small>
+                  <h5>
+                    <a href="#"
+                      >Master of Business Administration (Coursework)</a
+                    >
+                  </h5>
+                </div>
+                <div class="course-time">
+                  <div class="c-fee">
+                    <small>Fee per year</small>
+                    <strong>USD 39,500</strong>
+                  </div>
+                  <div class="c-fee c-dur">
+                    <small>duration</small>
+                    <strong>2 year</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="univ-card">
+              <div class="univ-head">
+                <div class="univ-logo">
+                  <div class="img-wrap">
+                    <img
+                      src="assets_front/images/swinburne-university.png"
+                      alt="swinburne university logo"
+                    />
+                  </div>
+                </div>
+                <div class="univ-name">
+                  <h4><a href="#">Swinburne University of Technology</a></h4>
+                  <small>Victoria, Australia</small>
+                </div>
+                <div class="heart-icon">
+                  <a href="#"
+                    ><iconify-icon icon="mdi:favourite-border"></iconify-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="univ-course">
+                <div class="course-title">
+                  <small>Course name</small>
+                  <h5>
+                    <a href="#"
+                      >Graduate Diploma in Early Childhood Education
+                      (Extension)</a
+                    >
+                  </h5>
+                </div>
+                <div class="course-time">
+                  <div class="c-fee">
+                    <small>Fee per year</small>
+                    <strong>AUD 38,614</strong>
+                  </div>
+                  <div class="c-fee c-dur">
+                    <small>duration</small>
+                    <strong>1 year</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="univ-card">
+              <div class="univ-head">
+                <div class="univ-logo">
+                  <div class="img-wrap">
+                    <img
+                      src="assets_front/images/southern-queensland.png"
+                      alt="southern queensland university logo"
+                    />
+                  </div>
+                </div>
+                <div class="univ-name">
+                  <h4><a href="#">University of Southern Queensland</a></h4>
+                  <small>Toronto, Canada</small>
+                </div>
+                <div class="heart-icon">
+                  <a href="#"
+                    ><iconify-icon icon="mdi:favourite-border"></iconify-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="univ-course">
+                <div class="course-title">
+                  <small>Course name</small>
+                  <h5>
+                    <a href="#"
+                      >Master in Information and Communication Technology</a
+                    >
+                  </h5>
+                </div>
+                <div class="course-time">
+                  <div class="c-fee">
+                    <small>Fee per year</small>
+                    <strong>CAD 27,800</strong>
+                  </div>
+                  <div class="c-fee c-dur">
+                    <small>duration</small>
+                    <strong>2 year</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="univ-card">
+              <div class="univ-head">
+                <div class="univ-logo">
+                  <div class="img-wrap">
+                    <img
+                      src="assets_front/images/sunshine-cost.png"
+                      alt="sunshine cost university logo"
+                    />
+                  </div>
+                </div>
+                <div class="univ-name">
+                  <h4><a href="#">University of the Sunshine Cost</a></h4>
+                  <small>Queensland, Australia</small>
+                </div>
+                <div class="heart-icon">
+                  <a href="#"
+                    ><iconify-icon icon="mdi:favourite-border"></iconify-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="univ-course">
+                <div class="course-title">
+                  <small>Course name</small>
+                  <h5><a href="#">Bachelor of Arts in Anthropology</a></h5>
+                </div>
+                <div class="course-time">
+                  <div class="c-fee">
+                    <small>Fee per year</small>
+                    <strong>AUD 50,500</strong>
+                  </div>
+                  <div class="c-fee c-dur">
+                    <small>duration</small>
+                    <strong>3 year</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="univ-card">
+              <div class="univ-head">
+                <div class="univ-logo">
+                  <div class="img-wrap">
+                    <img
+                      src="assets_front/images/griffith-university.png"
+                      alt="griffith university logo"
+                    />
+                  </div>
+                </div>
+                <div class="univ-name">
+                  <h4><a href="#">Griffith University</a></h4>
+                  <small>Nova Scotia, Canada</small>
+                </div>
+                <div class="heart-icon">
+                  <a href="#"
+                    ><iconify-icon icon="mdi:favourite-border"></iconify-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="univ-course">
+                <div class="course-title">
+                  <small>Course name</small>
+                  <h5><a href="#">Bachelor of Arts in Anthropology</a></h5>
+                </div>
+                <div class="course-time">
+                  <div class="c-fee">
+                    <small>Fee per year</small>
+                    <strong>CAD 39,500</strong>
+                  </div>
+                  <div class="c-fee c-dur">
+                    <small>duration</small>
+                    <strong>1 year</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="paginatn">
+              <div class="pgntn-info">
+                <span>Showing 1 to 12 of 100 results</span>
+              </div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link">Prev</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#">...</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">100</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="comp-info">
+              <a href="index.html">
+                <div class="img-wrap">
+                  <img
+                    src="assets_front/images/Logo1.png"
+                    alt="Cloud Education logo"
+                  />
+                </div>
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Nibh leo amet sed orci
+                ipsum lectus pretium diam. Placerat ipsum volutpat commodo
+                sodales.
+              </p>
+            </div>
+          </div>
+          <div class="col col-6 col-lg-2">
+            <div class="footer-contn">
+              <h5>quick links</h5>
+              <ul>
+                <li>
+                  <a href="#">Discover</a>
+                </li>
+                <li>
+                  <a href="#">Community</a>
+                </li>
+                <li>
+                  <a href="#">apply visa</a>
+                </li>
+                <li>
+                  <a href="#">success stories</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-6 col-lg-2">
+            <div class="footer-contn">
+              <h5>Legal</h5>
+              <ul>
+                <li>
+                  <a href="#">cookies policy</a>
+                </li>
+                <li>
+                  <a href="#">privacy policy</a>
+                </li>
+                <li>
+                  <a href="#">terms of service</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-12 col-lg-2">
+            <div class="footer-contn">
+              <h5>Get app</h5>
+              <div class="app-wrap">
+                <div class="img-wrap">
+                  <a href="#">
+                    <img
+                      src="assets_front/images/play-store.png"
+                      alt="play store"
+                    />
+                  </a>
+                </div>
+                <div class="img-wrap">
+                  <a href="#">
+                    <img
+                      src="assets_front/images/app-store.png"
+                      alt="app store"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="copy-right">
+              <p>Copyright © 2024 Cloud Education. All rights reserved.</p>
+              <ul class="social-links">
+                <li>
+                  <a href="#"
+                    ><iconify-icon icon="ic:baseline-facebook"></iconify-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><iconify-icon icon="mdi:twitter"></iconify-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><iconify-icon icon="mdi:youtube"></iconify-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><iconify-icon icon="mdi:linkedin"></iconify-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+    <script>
+      function optionFunction() {
+        var x = document.getElementById("collapse-select");
+        x.classList.toggle("d-none");
+        event.preventDefault();
+      }
+    </script>
+  </body>
+</html>

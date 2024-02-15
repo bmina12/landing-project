@@ -1,0 +1,733 @@
+* {
+    text-decoration: none;
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+  }
+  
+  body {
+    font-family: "Noto Sans", sans-serif;
+    min-width: 320px;
+    overflow-x: hidden;
+  }
+  
+  header {
+    padding: 16px 0;
+    background: #fff;
+  }
+  header .nav-sec nav {
+    background-color: none;
+  }
+  header .nav-sec nav .navbar-brand {
+    margin-right: 40px;
+  }
+  header .nav-sec nav .navbar-nav {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+  header .nav-sec nav .navbar-nav .nav-item:hover .nav-link {
+    color: #0f32b1 !important;
+  }
+  header .nav-sec nav .navbar-nav .nav-item .dropdown-menu {
+    padding: 0;
+  }
+  header .nav-sec nav .navbar-nav .nav-item .dropdown-menu li .dropdown-item {
+    color: #2c2f3a;
+    transition: 0.4s ease-in-out;
+    padding: 10px 10px 10px 40px;
+    position: relative;
+    border-bottom: 1px solid transparent;
+  }
+  header .nav-sec nav .navbar-nav .nav-item .dropdown-menu li .dropdown-item:hover {
+    border-color: #0f32b1;
+    color: #0f32b1;
+  }
+  header .nav-sec nav .navbar-nav .nav-item .dropdown-menu li .dropdown-item:before {
+    content: "";
+    background-image: url(../images/menu-icon.png);
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 26px;
+    height: 26px;
+  }
+  header .nav-sec nav .navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  header .nav-sec nav .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #60677f;
+    text-transform: capitalize;
+    padding: 5px 0;
+  }
+  header .nav-sec nav .navbar-nav .nav-item .nav-link.active, header .nav-sec nav .navbar-nav .nav-item .nav-link:hover {
+    color: #0f32b1;
+  }
+  header .head-btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  header .head-btns .sign-in a {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 12px 24px;
+    background-color: #0f32b1;
+    border-radius: 100px;
+    font-weight: 500;
+  }
+  header .head-btns .sign-in a:hover {
+    background-color: #272d9f;
+  }
+  header .head-btns .dl-app {
+    margin: 0 0 0 12px;
+  }
+  header .head-btns .dl-app a {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 12px 24px;
+    border: 1px solid #ff785a;
+    border-radius: 100px;
+    color: #ff785a;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+  header .head-btns .dl-app a:hover {
+    background-color: #ff785a;
+    color: #fff;
+  }
+  header .head-btns .dl-app a iconify-icon {
+    color: #0f32b1;
+    font-size: 22px;
+    vertical-align: middle;
+    margin: 0 14px 3px 0;
+  }
+  
+  /*for college banner section*/
+  .college-banner {
+    position: relative;
+  }
+  .college-banner .img-wrap {
+    width: 100%;
+    padding-top: 420px;
+    position: relative;
+  }
+  .college-banner .img-wrap img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  .college-banner .img-wrap:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+  }
+  .college-banner .caption {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80%;
+    z-index: 1;
+  }
+  .college-banner .caption h1 {
+    color: #fff;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0 0 24px 0;
+    text-transform: capitalize;
+  }
+  .college-banner .caption small {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  
+  /*for search bar section*/
+  .search-bar {
+    margin-top: -80px;
+    position: relative;
+    z-index: 2;
+  }
+  .search-bar .search-wrap {
+    padding: 24px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(176, 184, 211, 0.6);
+    border-radius: 12px;
+  }
+  .search-bar .search-wrap .for-select {
+    text-align: center;
+  }
+  .search-bar .search-wrap .for-select button {
+    font-size: 14px;
+    color: #2c2f3a;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    border: none;
+    background: none;
+  }
+  .search-bar .search-wrap .for-select button:hover {
+    color: #ff785a;
+  }
+  .search-bar .search-wrap .for-select button iconify-icon {
+    vertical-align: middle;
+    margin: 0 12px 0 0;
+    font-size: 24px;
+  }
+  .search-bar .search-wrap .search-field {
+    margin-bottom: 24px;
+  }
+  .search-bar .search-wrap .search-field .input-group {
+    -moz-column-gap: 21px;
+         column-gap: 21px;
+  }
+  .search-bar .search-wrap .search-field .input-group .form-outline {
+    position: relative;
+    flex: 8;
+  }
+  .search-bar .search-wrap .search-field .input-group .form-outline input {
+    display: block;
+    padding: 10px 40px;
+    border: 1px solid #d1d3dc;
+    border-radius: 100px;
+    height: 56px;
+  }
+  .search-bar .search-wrap .search-field .input-group .form-outline input::-moz-placeholder {
+    color: #60677f;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .search-bar .search-wrap .search-field .input-group .form-outline input::placeholder {
+    color: #60677f;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .search-bar .search-wrap .search-field .input-group .form-outline .form-label {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 15px;
+  }
+  .search-bar .search-wrap .search-field .input-group .form-outline .form-label iconify-icon {
+    font-size: 18px;
+    color: #9197ac;
+    vertical-align: middle;
+  }
+  .search-bar .search-wrap .search-field .input-group .btn {
+    display: inline-block;
+    width: 131px;
+    text-transform: capitalize;
+    border-radius: 100px !important;
+    flex-shrink: 0;
+    background-color: #0f32b1;
+    transition: 0.4s ease-in-out;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    border: none;
+  }
+  .search-bar .search-wrap .search-field .input-group .btn:hover {
+    background-color: #ff785a;
+  }
+  .search-bar .search-wrap .form-select {
+    height: 48px;
+    color: #2c2f3a;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    border: 1px solid #d1d3dc;
+    border-radius: 8px;
+  }
+  
+  /*filter section*/
+  .filter-sec .f-wrap {
+    padding: 48px 0 32px 0;
+    border-bottom: 1px solid #d1d3dc;
+  }
+  .filter-sec .f-wrap .filter-head small {
+    font-size: 16px;
+    line-height: 24px;
+    color: #60677f;
+    display: block;
+  }
+  .filter-sec .f-wrap .filter-head h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2c2f3a;
+    margin: 0;
+  }
+  .filter-sec .f-wrap .filter-wrap {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 14px;
+         column-gap: 14px;
+    justify-content: flex-end;
+  }
+  .filter-sec .f-wrap .filter-wrap strong {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #2c2f3a;
+  }
+  .filter-sec .f-wrap .filter-wrap .form-select {
+    width: 177px;
+    color: #2c2f3a;
+    border: 1px solid #60677f;
+    border-radius: 8px;
+    height: 40px;
+  }
+  
+  .university-wrap {
+    padding: 32px 0;
+  }
+  .university-wrap .univ-card {
+    border: 1px solid #d1d3dc;
+    border-radius: 12px;
+    min-height: 275px;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0px 2px 4px 0px rgba(172, 188, 245, 0.25);
+    margin: 0 0 32px 0;
+  }
+  .university-wrap .univ-card:hover {
+    box-shadow: 0px 2px 4px 0px rgba(176, 184, 211, 0.6);
+  }
+  .university-wrap .univ-card .univ-head {
+    display: flex;
+    align-items: center;
+    padding: 16px 48px 16px 16px;
+    border-bottom: 1px solid #d1d3dc;
+    position: relative;
+  }
+  .university-wrap .univ-card .univ-head .univ-logo {
+    margin: 0 12px 0 0;
+  }
+  .university-wrap .univ-card .univ-head .univ-logo .img-wrap {
+    display: block;
+    width: 72px;
+    position: relative;
+    height: 0;
+    padding-top: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #d1d3dc;
+  }
+  .university-wrap .univ-card .univ-head .univ-logo .img-wrap img {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .university-wrap .univ-card .univ-head .univ-name {
+    margin: 0 8px 0 0;
+  }
+  .university-wrap .univ-card .univ-head .univ-name h4 {
+    margin: 0;
+  }
+  .university-wrap .univ-card .univ-head .univ-name h4 a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #2c2f3a;
+    font-weight: 600;
+    display: block;
+  }
+  .university-wrap .univ-card .univ-head .univ-name h4 a:hover {
+    color: #0f32b1;
+  }
+  .university-wrap .univ-card .univ-head .univ-name small {
+    font-size: 14px;
+    color: #60677f;
+    line-height: 20px;
+  }
+  .university-wrap .univ-card .univ-head .heart-icon {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+  }
+  .university-wrap .univ-card .univ-head .heart-icon a iconify-icon {
+    font-size: 24px;
+    color: #60677f;
+    transition: 0.4s ease-in-out;
+    display: inline-block;
+  }
+  .university-wrap .univ-card .univ-head .heart-icon a:hover iconify-icon {
+    color: #ff785a;
+  }
+  .university-wrap .univ-card .univ-course {
+    padding: 20px 16px;
+  }
+  .university-wrap .univ-card .univ-course .course-title {
+    margin: 0 0 20px 0;
+  }
+  .university-wrap .univ-card .univ-course .course-title small {
+    font-size: 14px;
+    line-height: 20px;
+    color: #60677f;
+    text-transform: capitalize;
+  }
+  .university-wrap .univ-card .univ-course .course-title h5 a {
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    color: #2c2f3a;
+    font-weight: 600;
+  }
+  .university-wrap .univ-card .univ-course .course-title h5 a:hover {
+    color: #0f32b1;
+  }
+  .university-wrap .univ-card .univ-course .course-time {
+    display: flex;
+    gap: 0 32px;
+  }
+  .university-wrap .univ-card .univ-course .course-time .c-fee small {
+    font-size: 16px;
+    line-height: 20px;
+    color: #60677f;
+    text-transform: capitalize;
+    display: block;
+  }
+  .university-wrap .univ-card .univ-course .course-time .c-fee strong {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+  .university-wrap .paginatn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .university-wrap .paginatn .pgtn-info span {
+    font-size: 16px;
+    line-height: 24px;
+    color: #2c2f3a;
+  }
+  .university-wrap .paginatn .pagination {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    margin: 0;
+  }
+  .university-wrap .paginatn .pagination li .page-link {
+    border: none;
+    background-color: none;
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #2c2f3a;
+    padding: 0;
+    border-radius: 50%;
+  }
+  .university-wrap .paginatn .pagination li.disabled .page-link {
+    background: none !important;
+  }
+  .university-wrap .paginatn .pagination li.active .page-link,
+  .university-wrap .paginatn .pagination li .page-link:hover {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background: #0f32b1;
+  }
+  .university-wrap .paginatn .pagination li:last-of-type .page-link {
+    color: #0f32b1;
+    font-weight: 500;
+  }
+  .university-wrap .paginatn .pagination li:last-of-type .page-link:hover {
+    background: none;
+    color: #0f32b1;
+  }
+  
+  /*for footer*/
+  footer {
+    background-color: #061447;
+    padding: 64px 0 0 0;
+  }
+  footer .comp-info {
+    max-width: 320px;
+  }
+  footer .comp-info .img-wrap {
+    margin: 0 0 32px 0;
+  }
+  footer .comp-info p {
+    color: #d1d3dc;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .footer-contn h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+  }
+  footer .footer-contn ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  footer .footer-contn ul li {
+    margin: 0 0 10px 0;
+  }
+  footer .footer-contn ul li a {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #d1d3dc;
+    text-transform: capitalize;
+  }
+  footer .footer-contn ul li a:hover {
+    color: #ff785a;
+  }
+  footer .footer-contn .img-wrap {
+    margin: 0 0 10px 0;
+  }
+  footer .copy-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 0;
+    border-top: 0.5px solid #9197ac;
+    margin: 48px 0 0 0;
+  }
+  footer .copy-right p {
+    color: #d1d3dc;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+  footer .copy-right .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  footer .copy-right .social-links li {
+    display: inline-block;
+    margin: 0 0 0 24px;
+  }
+  footer .copy-right .social-links li a iconify-icon {
+    font-size: 24px;
+    color: #60677f;
+    transition: 0.4s ease-in-out;
+  }
+  footer .copy-right .social-links li a:hover iconify-icon {
+    color: #ff785a;
+  }
+  
+  /*for responsive*/
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .university-wrap .univ-card {
+      min-height: 324px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-collapse {
+      padding: 10px;
+      background-color: #eee;
+      border-radius: 8px;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+    .navbar-toggler .navbar-toggler-icon {
+      color: #2c2f3a;
+      border: none;
+      font-size: 18px;
+    }
+    header .head-btns {
+      margin: 15px 0 0 0;
+      justify-content: center;
+    }
+    .search-bar .search-wrap .form-select {
+      margin: 10px 0 0 0;
+    }
+    .university-wrap .univ-card {
+      min-height: 300px;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-collapse {
+      padding: 10px;
+      background-color: #eee;
+      border-radius: 8px;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+    .navbar-toggler .navbar-toggler-icon {
+      color: #2c2f3a;
+      border: none;
+      font-size: 18px;
+    }
+    header .head-btns {
+      margin: 15px 0 0 0;
+      justify-content: center;
+    }
+    .college-banner .caption {
+      left: 50px;
+      transform: initial;
+      text-align: left;
+      top: 15%;
+    }
+    .college-banner .caption h1 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+    .university-wrap .univ-card {
+      min-height: auto;
+    }
+    .university-wrap .paginatn {
+      display: block;
+    }
+    .university-wrap .paginatn .pgntn-info {
+      margin: 0 0 10px 0;
+    }
+    .university-wrap .paginatn .pagination {
+      -moz-column-gap: 10px;
+           column-gap: 10px;
+    }
+    footer .comp-info {
+      margin: 0 0 32px 0;
+    }
+    footer .footer-contn {
+      margin: 0 0 48px 0;
+    }
+    footer .footer-contn .app-wrap {
+      display: flex;
+      gap: 0 40px;
+    }
+    footer .copy-right {
+      margin: 0;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    footer .copy-right .social-links {
+      margin: 0 0 24px 0;
+    }
+    footer .copy-right .social-links li {
+      margin: 0 24px 0 0;
+    }
+    footer .copy-right p {
+      font-size: 12px;
+    }
+    .search-bar .search-wrap .form-select {
+      margin: 10px 0 0 0;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .navbar-collapse {
+      padding: 10px;
+      background-color: #eee;
+      border-radius: 8px;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+    .navbar-toggler .navbar-toggler-icon {
+      color: #2c2f3a;
+      border: none;
+      font-size: 18px;
+    }
+    header .head-btns {
+      margin: 15px 0 0 0;
+      justify-content: center;
+    }
+    header .head-btns .sign-in a, header .head-btns .dl-app a {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+    .college-banner .img-wrap {
+      padding-top: 365px;
+    }
+    .college-banner .caption {
+      left: 50px;
+      transform: initial;
+      text-align: left;
+      top: 15%;
+    }
+    .college-banner .caption h1 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+    .university-wrap .univ-card {
+      min-height: auto;
+    }
+    .university-wrap .paginatn {
+      display: block;
+    }
+    .university-wrap .paginatn .pgntn-info {
+      margin: 0 0 10px 0;
+    }
+    .university-wrap .paginatn .pagination {
+      -moz-column-gap: 7px;
+           column-gap: 7px;
+    }
+    footer .comp-info {
+      margin: 0 0 32px 0;
+    }
+    footer .footer-contn {
+      margin: 0 0 48px 0;
+    }
+    footer .footer-contn .app-wrap {
+      display: flex;
+      gap: 0 40px;
+    }
+    footer .copy-right {
+      margin: 0;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    footer .copy-right .social-links {
+      margin: 0 0 24px 0;
+    }
+    footer .copy-right .social-links li {
+      margin: 0 24px 0 0;
+    }
+    footer .copy-right p {
+      font-size: 12px;
+    }
+    .search-bar .search-wrap .form-select {
+      margin: 10px 0 0 0;
+    }
+  }/*# sourceMappingURL=style.css.map */
